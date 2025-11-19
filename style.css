@@ -55,6 +55,9 @@ body {
         background-color: #fff;
         overflow: hidden;
     }
+    .options-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .screen {
@@ -402,5 +405,33 @@ p {
     40%,
     60% {
         transform: translate3d(4px, 0, 0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+    .content-card {
+        padding: 2rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .game-info {
+        gap: 1rem;
+    }
+
+    .difficulty-selector .options {
+        gap: 0.5rem;
+        flex-wrap: wrap; /* Allow wrapping on very small screens */
+    }
+
+    .difficulty-selector label {
+        padding: 0.5rem 0.75rem;
     }
 }
